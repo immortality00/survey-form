@@ -10,8 +10,8 @@ export const HeaderContainer = styled.div`
 
   @media screen and (max-width: 800px) {
     height: 60px;
-    padding: 10px;
-    margin-bottom: 20px;
+    width: 200%;
+    margin-bottom: 5rem;
   }
 `;
 
@@ -34,6 +34,7 @@ export const OptionsContainer = styled.div`
 
   @media screen and (max-width: 800px) {
     width: 80%;
+    padding-top: 3rem;
   }
 `;
 
