@@ -10,8 +10,8 @@ import { checkUserSession } from "./redux/user/user-actions";
 import Spinner from "./components/spinner/spinner";
 import ErrorBoundary from "./components/error-boundary/error-boundary";
 
-const AboutUs = lazy(() => import("./pages/about-us/about-us"));
-const Results = lazy(() => import("./pages/results/results"));
+// const AboutUs = lazy(() => import("./pages/about-us/about-us"));
+// const Results = lazy(() => import("./pages/results/results"));
 const AddItems = lazy(() => import("./pages/add-items/add-items"));
 const SignInAndSignUpPage = lazy(() => import("./pages/Sign-in-up/Sign-in-up"));
 
@@ -28,8 +28,8 @@ const App = ({ checkUserSession, currentUser }) => {
         <ErrorBoundary>
           <Suspense fallback={<Spinner />}>
             <Route exact path="/" component={AddItems} />
-            <Route path="/results" component={Results} />
-            <Route exact path="/about-us" component={AboutUs} />
+            {/* <Route path="/results" component={Results} />
+            <Route exact path="/about-us" component={AboutUs} /> */}
             <Route
               exact
               path="/signin"
@@ -37,7 +37,6 @@ const App = ({ checkUserSession, currentUser }) => {
                 currentUser ? <Redirect to="/" /> : <SignInAndSignUpPage />
               }
             />
-            <Route exact path="/add-items" component={AddItems} />
           </Suspense>
         </ErrorBoundary>
       </Switch>

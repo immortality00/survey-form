@@ -1,4 +1,5 @@
 import React from "react";
+import { withRouter } from "react-router-dom";
 import {
   AddItemsContainer,
   AddItemsTitle,
@@ -109,6 +110,7 @@ class AddItemsForm extends React.Component {
       Ideas: "",
       hidden: true,
     });
+
     console.log(this.state);
   };
 
@@ -227,4 +229,4 @@ class AddItemsForm extends React.Component {
   }
 }
 
-export default AddItemsForm;
+export default withRouter(AddItemsForm);
