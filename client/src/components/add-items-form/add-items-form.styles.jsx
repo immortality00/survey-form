@@ -9,13 +9,10 @@ export const AddItemsContainer = styled.div`
   margin-bottom: 7%;
 
   @media screen and (max-width: 800px) {
-    width: 200%;
+    width: 100%;
     display: block;
-    margin: 7rem 3rem;
+    margin: 7rem 0rem;
     align-items: center;
-    > *:first-child {
-      margin-bottom: 50px;
-    }
   }
 `;
 export const SectionsContainer = styled.div`
@@ -25,15 +22,21 @@ export const SectionsContainer = styled.div`
   margin: 30px auto;
   @media screen and (max-width: 800px) {
     display: grid;
-    width: auto;
+  }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    display: flex;
   }
 `;
 export const LeftSection = styled.div`
   float: left;
   width: 30%;
   @media screen and (max-width: 800px) {
-    width: 80%;
-    margin: 0 13rem 0 auto;
+    float: none;
+    width: auto;
+    margin-bottom: -52px;
+  }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    margin-bottom: 0;
   }
 `;
 export const RightSection = styled.div`
@@ -43,23 +46,31 @@ export const RightSection = styled.div`
     display: none;
   }
   @media screen and (max-width: 800px) {
-    width: 80%;
-    margin: 0 13rem 0 auto;
+    float: none;
+    width: auto;
   }
 `;
 
 export const AddItemsTitle = styled.h2`
   margin: 5px auto;
   @media screen and (max-width: 800px) {
-    padding: 0 1rem;
-    align-items: center;
+    padding: 0 4rem;
+    text-align: center;
+    font-size: small;
+  }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    font-size: x-large;
   }
 `;
 export const AddItemsText = styled.p`
   margin: 10px auto;
   @media screen and (max-width: 800px) {
-    padding: 0 3rem;
-    align-items: center;
+    padding: 0 4rem;
+    text-align: center;
+    font-size: small;
+  }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    font-size: larger;
   }
 `;
 
@@ -67,6 +78,9 @@ export const ButtonContainer = styled.div`
   margin: 10px 34rem;
 
   @media screen and (max-width: 800px) {
-    margin: 0 14rem;
+    margin: 0 5rem;
+  }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    margin: 0 18rem;
   }
 `;

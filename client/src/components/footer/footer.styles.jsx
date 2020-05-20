@@ -12,10 +12,6 @@ export const FooterStyles = styled.footer`
   @media screen and (max-width: 1680px) {
     margin: 2em 0 0 0;
   }
-  @media screen and (max-width: 1280px) {
-    margin: 10rem 12rem 0;
-    width: 100%;
-  }
 `;
 export const Copyrights = styled.p`
   color: #bbb;
