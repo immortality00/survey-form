@@ -107,6 +107,7 @@ export const FlagContainer = styled.div`
     cursor: pointer;
     &:hover {
       width: 50px;
+      heigh: 50px;
     }
   }
 `;
