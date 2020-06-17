@@ -105,9 +105,9 @@ export const FlagContainer = styled.div`
     border: 1px solid black;
     border-radius: 50px;
     cursor: pointer;
+    height: 30px;
     &:hover {
       width: 50px;
-      heigh: 50px;
     }
   }
 `;
