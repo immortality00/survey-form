@@ -1,11 +1,15 @@
 import styled from "styled-components";
 
+export const DivContainer = styled.div`
+  display: contents;
+`;
+
 export const AddItemsContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 80%;
   margin-left: 10%;
-  margin-top: 5%;
+  margin-top: 4%;
   margin-bottom: 7%;
 
   @media screen and (max-width: 800px) {
@@ -82,5 +86,27 @@ export const ButtonContainer = styled.div`
   }
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
     margin: 0 18rem;
+  }
+`;
+
+export const FlagContainer = styled.div`
+  margin: -2rem 0 0 82%;
+  display: flex;
+  justify-content: space-evenly;
+  @media screen and (max-width: 800px) {
+    margin: 0% 50%;
+  }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1025px) and (orientation: portrait) {
+    margin: 0% 50%;
+  }
+  & img {
+    width: 30px;
+    margin: 0 5px 0 5px;
+    border: 1px solid black;
+    border-radius: 50px;
+    cursor: pointer;
+    &:hover {
+      width: 50px;
+    }
   }
 `;
